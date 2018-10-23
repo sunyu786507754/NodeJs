@@ -4,7 +4,7 @@ var path=require('path');
 var mime=require('mime');
 var cache={};
 
-//404跳转
+//404跳转123
 function send404(response){
     response.writeHead(404,{'Content-Type':'text/plain'});
     response.write('Error 404:response not found');
@@ -54,5 +54,5 @@ server.listen(3000,function(){
     console.log('Server listening on port 3000');
 });
 
-var chatServer=require('./lib/chat_server.js');
-chatServer(server);
+var chatServer=require('./lib/chat_server');
+chatServer.listen(server);
