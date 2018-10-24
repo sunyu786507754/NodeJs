@@ -1,4 +1,4 @@
-//处理特殊字符
+//处理特殊字符123
 function divEscapedContentElement(message){
     return $('<div></div>').text(message);
 }
