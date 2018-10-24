@@ -22,3 +22,4 @@ function processUserInput(chatApp,socket){
     }
     $('#send-messages').val('');
 }
+
